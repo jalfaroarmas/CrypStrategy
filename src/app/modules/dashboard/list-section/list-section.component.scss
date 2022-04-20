@@ -1,0 +1,35 @@
+$bgColor: #181A20;
+// $bgColor:'white';
+$mainColor: #F0B90B;
+$bgSecond: #1E2026;
+$textGray: #a9a9a9;
+$textDanger: #E2465B;
+$textWhite: white;
+
+
+:host{
+    display: block;
+    background-color: $bgSecond;
+    padding: .75rem;
+}
+.wrapper{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            padding: .175rem 0;
+        
+            .inside-list{
+                font-size: .75rem;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.text-muted{
+    color: $textGray;
+    font-size: .9rem;
+}

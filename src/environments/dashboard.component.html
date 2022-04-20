@@ -1,0 +1,38 @@
+<mat-toolbar color="secundary">
+   
+    <div class="nav-container">
+        
+      <div>
+          <button (click)="drawer.toggle()" mat-icon-button class="icon" aria-label="ex">
+              <mat-icon>menu</mat-icon>
+          </button>
+         <i routerLink="/dashboard" ><span>CrypStrategy</span></i> 
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
+  </mat-toolbar>
+  
+
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer mode="side" opened> 
+    <mat-list role="list">
+      <mat-list-item role="listitem" routerLink="coinmaket">
+        <mat-icon mat-list-icon>folder</mat-icon>
+        CoinMarket</mat-list-item>
+      
+    </mat-list>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <mat-card>
+      <mat-card-content>
+        <router-outlet></router-outlet>
+        <app-chart-dashboard ></app-chart-dashboard>
+      </mat-card-content>
+    </mat-card>
+  
+   

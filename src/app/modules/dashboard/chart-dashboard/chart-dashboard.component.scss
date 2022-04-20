@@ -1,0 +1,17 @@
+$bgColor: #181A20;
+// $bgColor:'white';
+$mainColor: #F0B90B;
+$bgSecond: #1E2026;
+$textGray: #a9a9a9;
+$textDanger: #E2465B;
+$textWhite: white;
+
+
+.wrapper{
+    background-color: $bgSecond;
+    display: block;
+    // min-height: 510px;
+    border-left: solid 3px $bgColor;
+    border-right: solid 3px $bgColor;
+    padding: .5rem;
+}
